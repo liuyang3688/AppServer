@@ -100,7 +100,7 @@ function pad(num, n) {
     return num;
 };
 let GCONFIG = {
-	pic_path : '/glserver/static/pic/',
+	pic_path : '/appserver/static/pic/',
 	bg_img: 'bg.jpg',
     cab_outer_height:230,
     side_cab: -440,
@@ -175,7 +175,7 @@ D3DLib.prototype.reset = function(){
 //Load Event From DB
 D3DLib.prototype.loadEvtFromDB = function () {
 	$.ajax({
-		url:'/glserver/event/get_all_event',
+		url:'/appserver/event/get_all_event',
 		dataType:'json',
 		data: null,
 		success:function(data){
@@ -190,7 +190,7 @@ D3DLib.prototype.loadEvtFromDB = function () {
 //Load Button From DB
 D3DLib.prototype.loadBtnFromDB = function(){
     $.ajax({
-        url:'/glserver/button/get_all_btn',
+        url:'/appserver/button/get_all_btn',
         dataType:'json',
         data: null,
         success:function(data){
@@ -468,7 +468,7 @@ D3DLib.prototype.connection = function(){
     }
     if (!GCONFIG['conn']) {
         $.ajax({
-            url: '/glserver/eth/get_all_eth',
+            url: '/appserver/eth/get_all_eth',
             dataType: 'json',
             data: null,
             success: function (datas) {
@@ -932,7 +932,7 @@ D3DLib.prototype.calcCabInfo = function() {
     let cabAffiMap = new Map();
     //获取机柜的信息
     $.ajax({
-        url: '/glserver/clone/get_all_cab',
+        url: '/appserver/clone/get_all_cab',
         dataType: 'json',
         data: null,
         async: false,
@@ -959,7 +959,7 @@ D3DLib.prototype.cab_sel_box = function() {
         if (GCONFIG['areaMap'].size === 0) {
             // 请求area
             $.ajax({
-                url:'/glserver/clone/get_all_area',
+                url:'/appserver/clone/get_all_area',
                 dataType:'json',
                 data: null,
                 async: false,
@@ -977,7 +977,7 @@ D3DLib.prototype.cab_sel_box = function() {
         if (GCONFIG['sysMap'].size === 0) {
             // 请求sys
             $.ajax({
-                url:'/glserver/clone/get_all_sys',
+                url:'/appserver/clone/get_all_sys',
                 dataType:'json',
                 data: null,
                 async: false,
@@ -1168,7 +1168,7 @@ D3DLib.prototype.power = function(){
     }
     if (!GCONFIG['power']){
         $.ajax({
-            url: '/glserver/clone/get_all_power',
+            url: '/appserver/clone/get_all_power',
             dataType: 'json',
             data: null,
             success: function (datas) {
@@ -1339,11 +1339,11 @@ D3DLib.prototype.createPower = function(pathName, pathType, fmPt, toPt, params) 
     // let r=Math.floor(Math.random()*256);
     // let g=Math.floor(Math.random()*256);
     // let b=Math.floor(Math.random()*256);
-    let imgurl = '/glserver/static/pic/UV_Red.png';
+    let imgurl = '/appserver/static/pic/UV_Red.png';
     switch (params['type']) {
-        case 1: imgurl = '/glserver/static/pic/UV_Green.png'; break;
-        case 2: imgurl = '/glserver/static/pic/UV_Red.png'; break;
-        case 3: imgurl = '/glserver/static/pic/UV_Grid_Sm.jpg'; break;
+        case 1: imgurl = '/appserver/static/pic/UV_Green.png'; break;
+        case 2: imgurl = '/appserver/static/pic/UV_Red.png'; break;
+        case 3: imgurl = '/appserver/static/pic/UV_Grid_Sm.jpg'; break;
     }
     let pathConfig = {
         name: pathName,
@@ -1531,7 +1531,7 @@ D3DLib.prototype.dyn_data = function() {
         config['msgArr'] = [];
         dyn_data_int = setInterval(function(){
             $.ajax({
-                url: '/glserver/rt/get_rt_data',
+                url: '/appserver/rt/get_rt_data',
                 dataType: 'json',
                 data: null,
                 success: function (datas) {
@@ -1673,7 +1673,7 @@ D3DLib.prototype.updateFromDB = function() {
 	let promise_get_all_tpl = function(){
 		return new Promise(function (resolve, reject) {
 	        $.ajax({
-	            url: '/glserver/mesh/get_all_tpl',
+	            url: '/appserver/mesh/get_all_tpl',
 	            dataType: 'json',
 	            data: null,
 	            success: function (data) {
@@ -1689,7 +1689,7 @@ D3DLib.prototype.updateFromDB = function() {
     let promise_get_all_mesh = function() {
     	return new Promise(function (resolve, reject) {
 	        $.ajax({
-	            url: '/glserver/mesh/get_all_mesh',
+	            url: '/appserver/mesh/get_all_mesh',
 	            dataType: 'json',
 	            data: null,
 	            success: function (data) {
@@ -1705,7 +1705,7 @@ D3DLib.prototype.updateFromDB = function() {
     let promise_get_all_clone = function() {
     	return new Promise(function(resolve, reject){
 		    $.ajax({
-		        url:'/glserver/clone/get_all_clone',
+		        url:'/appserver/clone/get_all_clone',
 		        dataType:'json',
 		        data: null,
 		        success:function(data) {
@@ -1721,7 +1721,7 @@ D3DLib.prototype.updateFromDB = function() {
     let promise_get_all_label = function(){
     	return new Promise(function(resolve, reject){
 	        $.ajax({
-	            url: '/glserver/label/get_all_label',
+	            url: '/appserver/label/get_all_label',
 	            dataType: 'json',
 	            data: null,
 	            success: function (data) {
@@ -1737,7 +1737,7 @@ D3DLib.prototype.updateFromDB = function() {
     let promise_get_all_device = function() {
     	return new Promise(function(resolve, reject) {
 	        $.ajax({
-	            url: '/glserver/clone/get_all_device',
+	            url: '/appserver/clone/get_all_device',
 	            dataType: 'json',
 	            data: null,
 	            success: function (data) {
@@ -2131,7 +2131,7 @@ D3DLib.prototype.parseMeshData = function(data){
 		//修改isDirty标志
 //		$.ajax({
 //			type:'post',
-//			url:'/glserver/mesh/update_isdirty',
+//			url:'/appserver/mesh/update_isdirty',
 //			dataType:'json',
 //			data: { uuid: meshData['uuid'] },
 //			success:function(data){
@@ -3001,7 +3001,7 @@ D3DLib.prototype.showCableInfo = function(obj) {
 
         $.ajax({
             type:'post',
-            url:'/glserver/eth/get_cable_info',
+            url:'/appserver/eth/get_cable_info',
             dataType:'json',
             data: {'fmEthCode':fmEthCode, 'toEthCode':toEthCode},
             success:function(data){
@@ -3047,7 +3047,7 @@ D3DLib.prototype.showDeviceInfo = function(obj) {
 
         $.ajax({
             type:'post',
-            url:'/glserver/dev/get_device_info',
+            url:'/appserver/dev/get_device_info',
             dataType:'json',
             data: {'code':devCode},
             success:function(data){
