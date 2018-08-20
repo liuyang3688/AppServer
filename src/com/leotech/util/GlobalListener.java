@@ -1,10 +1,5 @@
 package com.leotech.util;
 
-import com.leotech.rt.AirCondComThread;
-import com.leotech.rt.DoorComThread;
-import com.leotech.rt.PowerComThread;
-import com.leotech.rt.WaterComThread;
-
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
