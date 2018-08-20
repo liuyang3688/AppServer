@@ -9,18 +9,10 @@
     <bookmark url="file://$PROJECT_DIR$/WebRoot/static/js/d3d.js" description="box['position']['set'](x, y, z);" line="2433" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ee0e450-66f1-4795-80af-8887a27f4d9e" name="Default" comment="normal commit">
+    <list default="true" id="4ee0e450-66f1-4795-80af-8887a27f4d9e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appserver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/appserver.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/appserver/com/leotech/controller/RtController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/appserver/com/leotech/controller/RtController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/appserver/com/leotech/rt/AirCondComThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/appserver/com/leotech/rt/DoorComThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/appserver/com/leotech/rt/PowerComThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/appserver/com/leotech/rt/WaterComThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/appserver/com/leotech/service/RtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/appserver/com/leotech/service/RtService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/appserver/com/leotech/util/GlobalListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/appserver/com/leotech/util/GlobalListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/leotech/controller/RtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leotech/controller/RtController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/leotech/rt/AirCondComThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leotech/rt/AirCondComThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/leotech/rt/DoorComThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leotech/rt/DoorComThread.java" afterDir="false" />
@@ -59,7 +51,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RtController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RtController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/leotech/controller/RtController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="106">
@@ -67,6 +59,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -193,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/com/leotech/controller/EthController.java" />
         <option value="$PROJECT_DIR$/src/com/leotech/dao/CloneDao.java" />
         <option value="$PROJECT_DIR$/src/com/leotech/dao/CabDao.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/leotech/dao/SysDao.java" />
         <option value="$PROJECT_DIR$/src/com/leotech/dao/AreaDao.java" />
         <option value="$PROJECT_DIR$/WebRoot/static/css/customValidator.css" />
@@ -224,6 +224,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/leotech/service/RtService.java" />
         <option value="$PROJECT_DIR$/src/com/leotech/controller/RtController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -471,7 +472,7 @@
       <workItem from="1534403785891" duration="607000" />
       <workItem from="1534688042405" duration="47000" />
       <workItem from="1534688252995" duration="7772000" />
-      <workItem from="1534726723216" duration="9193000" />
+      <workItem from="1534726723216" duration="9310000" />
     </task>
     <task id="LOCAL-00001" summary="normal commit">
       <created>1534689990918</created>
@@ -487,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534695436074</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="normal commit">
+      <created>1534736732591</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1534736732591</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -520,7 +528,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17987000" />
+    <option name="totallyTimeSpent" value="18104000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,6 +541,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.13464448" side_tool="true" visible="true" weight="0.38330495" />
@@ -964,13 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leotech/controller/RtController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -978,6 +980,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>
